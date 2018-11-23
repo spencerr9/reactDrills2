@@ -17,7 +17,7 @@ class App extends Component {
   render() {
     console.log(this.state)
     return (
-      <div>
+      <div className="App">
         <input onChange={(e => this.handleInput(e.target.value))} />
         <br/>
         <br/>
