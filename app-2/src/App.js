@@ -12,7 +12,7 @@ class App extends Component {
   render() {
     let mappedItems = this.state.items.map(element => {
       return (
-        <div>
+        <div key={`1 ${element}`}>
           <h2>{element}</h2>
         </div>
       )
