@@ -1,18 +1,13 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Picture from './Picture'
 
 class App extends Component {
   render() {
+    let image = 'http://topcarsmagazine.com/wp-content/uploads/2017/07/14500902349_c5d538593a_z-300x300.jpg'
     return (
       <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <Picture parentImage={image} />
       </div>
     );
   }
